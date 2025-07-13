@@ -1,0 +1,313 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Combined Hero Section */
+.hero-section {
+  background-image: url('Assets/Hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+
+/* Navbar inside Hero */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Banner content inside Hero */
+.banner-content {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 5rem;
+}
+
+.banner-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.signup-btn,
+.focus-btn {
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover,
+.focus-btn:hover {
+  background-color: #0097a7;
+  transform: scale(1.5);
+}
+
+
+/* Action Section */
+.action-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #e6f5dd;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.action-left {
+  flex: 2;
+}
+
+.action-left h2 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.action-left p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.preview-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+.preview-btn:hover {
+  background-color: #388e3c;
+  transform: scale(1.2);
+}
+
+.action-right {
+  flex: 1;
+  text-align: center;
+}
+
+.action-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+
+/* Productive Users Section */
+.users-section {
+  background-color: #95b9e2;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1a008f;
+}
+
+.user-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.stat-box h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.stat-box p {
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: #e3f2fd;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-left h2 {
+  font-size: 2rem;
+  color: #0d47a1;
+}
+
+.contact-right {
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact-btn {
+  padding: 0.8rem;
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #08306b;
+  transform: scale(1.05);
+}
+
+/* Feedback Section */
+.feedback-section {
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.feedback-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+}
+
+.stars img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.feedback-card h3 {
+  margin: 1rem 0 0.3rem;
+  color: #333;
+}
+
+.feedback-card p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reviewer img {
+  width: 50px;
+  height: 50px;
+  borer-radius: 50%;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.footer-logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #00bcd4;
+}
+
+.footer-subtitle {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.footer-nav {
+  margin-bottom: 2rem;
+}
+
+.footer-nav a {
+  margin: 0 1rem;
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+
+
+
